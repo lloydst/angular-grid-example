@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+.master-grid { // defaults to mobile | =mobile
+        display: grid;
+        min-height: 100vh;
+        min-width: 100%;
+        grid-template-rows: 50px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+                        "content"
+                        "footer";
+}
+@media only screen and (min-width: 600px) {
+        .master-grid {
+                grid-template-columns: 120px 1fr;
+                grid-template-areas: "header header"
+                                "sidebar  content";
+        }
+}
+.content {
+  background-color: #2c3e50;
+  grid-area: content;
+}
+
+
+
+.sidenav {
+  background-color: #7f8c8d;
+  grid-area: sidebar;
+  
+}
+.header {
+  background-color: yellow;
+  grid-area: header;
+}
+body {
+  margin: 0
+}

@@ -1,0 +1,16 @@
+@media only screen and (min-width:600px) {
+
+    .grid {
+       display: grid;
+       justify-items: center;
+       align-items: center;
+    }
+    
+    .grid i {
+      border: 1px solid red;
+    }
+  
+    .grid i {
+      display: block;
+    }
+  }
